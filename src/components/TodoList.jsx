@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MdDelete } from "react-icons/md";
+import { FcCalendar } from "react-icons/fc";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -18,12 +19,15 @@ function TodoList() {
   return (
     <div className="min-h-screen flex items-center justify-center  bg-primary dark:bg-black dark:text-white" >
       <div className="bg-secondary dark:bg-gray-900 shadow-lg rounded-3xl p-16 ">
-        <h1
+        <div className="flex justify-center gap-5 text-center">
+        <FcCalendar className="w-7 h-7" />
+      <h1
           className=" mb-7  font-title
    text-center  text-2xl text-textColor dark:text-green-800"
         >
           Todo App
         </h1>
+        </div>
         <div className="mb-4 flex gap-3">
           <input
             value={input}
