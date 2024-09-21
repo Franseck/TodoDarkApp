@@ -17,13 +17,13 @@ function TodoList() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center  bg-primary dark:bg-black dark:text-white" >
-      <div className="bg-secondary dark:bg-gray-900 shadow-lg rounded-3xl p-16 ">
+    <div className="min-h-screen flex items-center justify-center  bg-salar  dark:bg-moon bg-no-repeat bg-center bg-auto  bg-fixed  dark:text-white" >
+      <div className="bg-secondary bg-opacity-25 shadow-lg rounded-3xl p-16 ">
         <div className="flex justify-center gap-5 text-center">
         <FcCalendar className="w-7 h-7" />
       <h1
           className=" mb-7  font-title
-   text-center  text-2xl text-textColor dark:text-green-800"
+   text-center  text-2xl text-head dark:text-black"
         >
           Todo App
         </h1>
@@ -34,11 +34,11 @@ function TodoList() {
             onChange={(e) => setInput(e.target.value)}
             type="text"
             placeholder="Add something new"
-            className="flex-grow px-3 py-2 bg-placehold dark:bg-gray-500 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 font-placehold "
+            className="flex-grow px-3 py-2  bg-opacity-25 dark:bg-gray-800 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600 font-placehold "
           />
           <button
             onClick={addTodo}
-            className="bg-buttonCol hover:bg-buttonHov active:bg-orange-900 focus:outline-none focus:ring focus:ring-buttonCol text-orange-400 dark:text-teal-600 px-4 py-2 rounded-lg font-title"
+            className="bg-yellow-500 hover:bg-buttonHov active:bg-orange-900 focus:outline-none focus:ring focus:ring-buttonCol text-head dark:text-black px-4 py-2 rounded-lg font-title dark:bg-gray-800"
           >
             Add
           </button>
@@ -84,7 +84,7 @@ function TodoList() {
                     )
                   )
                 }
-                className="ml-2 border-none p-2 rounded-lg bg-red-500 text-white dark:bg-gray-700 
+                className="ml-2 border-none p-2 rounded-lg bg-red-800 text-white dark:bg-gray-700 
                 hover:bg-red-600 flex items-center  font-title  "
               >
                 Delete

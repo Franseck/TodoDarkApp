@@ -6,6 +6,10 @@ module.exports = {
   darkMode:"selector",
   theme: {
     extend: {
+      backgroundImage: {
+        "moon": "url('./assets/moon.jpg') ",
+        "salar": "url('./assets/salar.jpg') ",
+                    },
       colors: {
         primary: "#E1D7C6",
         secondary:"#B99470",
